@@ -1,5 +1,4 @@
-<!-- begin l_sidebar -->
-
+<!-- START: l_sidebar -->
 <div id="l_sidebar">
 <ul id="l_sidebarwidgeted">
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(1) ) : else : ?>
@@ -35,5 +34,4 @@ google_color_url = "000000";
 </ul>
 			
 </div>
-
-<!-- end l_sidebar -->
+<!-- END: l_sidebar -->
