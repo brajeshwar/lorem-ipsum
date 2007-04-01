@@ -1,20 +1,20 @@
 <?php get_header(); ?>
 
+<!-- START: content-articlecontent -->
 <div id="content">
 
+<!-- START: content-article -->
+<div id="content-article">
+<div class="post">
+	<h2>Not Found</h2>
+	<p>Sorry, but you are looking for something that isn't here.</p>
+</div>
+</div>
+<!-- END: content-article -->
+
 <?php include(TEMPLATEPATH."/l_sidebar.php");?>
-
-<div id="contentmiddle">
-
-<div class="contenttitle">
-	<h1>Not Found, Error 404</h1><br />
-	<p>The page you are looking for no longer exists.</p>
-	</div>
-	
 <?php include(TEMPLATEPATH."/r_sidebar.php");?>
 	
 </div>
-
-<!-- The main column ends  -->
-
+<!-- END: content -->
 <?php get_footer(); ?>
