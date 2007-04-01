@@ -176,6 +176,8 @@ margin: 4px 0;
 padding: 4px 0;
 }
 
+div#l_sidebar p, div#r_sidebar p {}
+
 div#l_sidebar ul, div#r_sidebar ul  {
 list-style: none;
 margin: 0;
