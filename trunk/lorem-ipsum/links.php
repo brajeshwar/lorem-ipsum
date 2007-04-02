@@ -1,4 +1,8 @@
-<?php /* Template Name: Links */ ?>
+<?php
+/*
+Template Name: Links
+*/
+?>
 
 <?php get_header(); ?>
 

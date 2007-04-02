@@ -11,8 +11,9 @@
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php the_content('&rarr; continue reading'); ?>
 		<p class="single-postmeta">
-			This article was posted on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?>
-			and is filed under <?php the_category(', ') ?>.
+			<strong><abbr title="<?php the_author_description(); ?>"><?php the_author(); ?></abbr></strong>
+			posted this article under <?php the_category(', ') ?>
+			on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?>
 			You can follow any responses to this entry through the <?php comments_rss_link('RSS 2.0'); ?> feed.
 
 			<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
