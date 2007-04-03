@@ -5,10 +5,10 @@
 
 <li id="Categories">
 <h2>Categories</h2>
-	<ul>
-	<?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
-	</ul>
-	
+<ul><?php wp_list_categories('orderby=name&show_count=1&hide_empty=1&title_li'); ?></ul>
+
+<!-- why not try a calendar here, something like the k10k.net style -->
+
 <li id="ads-adsense">
 <h2>Sponsors</h2>
 <script type="text/javascript"><!--

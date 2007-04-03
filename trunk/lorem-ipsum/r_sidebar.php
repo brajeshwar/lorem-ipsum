@@ -66,13 +66,19 @@ foreach($years as $year) :
 	<ul>
 		<?php wp_register(); ?>
 		<li><?php wp_loginout(); ?></li>
-		<li><a class="tr-linkcount" href="http://technorati.com/search/<?php echo $_SERVER['HTTP_HOST'];?>" rel="linkcount">Technorati Links</a></li>
 		<?php wp_meta(); ?>
 	</ul>
 	
 	<?php endif; ?>
 	</ul>
-		
+
+<div id="sidebar-misc">
+	<h2>Etcetera</h2>
+	<p>
+	<script src="http://widgets.technorati.com/t.js" type="text/javascript"></script><a href="http://technorati.com/blogs/<?php bloginfo('url'); ?>?sub=tr_authority_t_ns" class="tr_authority_t_js" style="color:#4261DF">Technorati blog authority</a>
+	</p>
+</div>
+
 </div>
 <!-- END: r_sidebar -->
 <div class="clearall"><!-- let me try and pull down the content div --></div>

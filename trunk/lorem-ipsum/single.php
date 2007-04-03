@@ -32,7 +32,8 @@
 			// Neither Comments, nor Pings are open ?>
 			Both comments and pings are currently closed.
 
-			<?php } edit_post_link('Edit this entry.','',''); ?>			
+			<?php } edit_post_link('Edit this entry.','',''); ?>
+			<script src="http://embed.technorati.com/linkcount" type="text/javascript"></script> <a class="tr-linkcount" href="http://technorati.com/search/<?php the_permalink(); ?>">View Technorati Linkbacks.</a>
 		</p>
 	</div>
 	
