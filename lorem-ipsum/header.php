@@ -22,7 +22,6 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <!-- javascript -->
-<script src="http://embed.technorati.com/linkcount" type="text/javascript"></script>
 
 <!-- favicon -->
 <link href="<?php bloginfo('template_directory'); ?>/i/favicon.ico"  type="image/x-icon" rel="icon" />

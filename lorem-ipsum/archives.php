@@ -30,23 +30,14 @@ Template Name: Archives
 	</div>
 	<div class="post">
 		<h2>Categories</h2>
-		<ul><?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?></ul>
+		<ul><?php wp_list_categories('orderby=name&show_count=1&hide_empty=1&title_li'); ?></ul>
 	</div>
 	<div class="post">
 		<h2>The Last 100 Article (if available)</h2>
 		<ul><?php wp_get_archives('type=postbypost&limit=100&format=html'); ?></ul>
 	</div>
 
-<?php endwhile; ?>
-
-<!-- START: navigation -->
-<div class="navigation">
-	<div class="alignleft"><?php next_posts_link('&#x21E4; Previous Entries') ?></div>
-	<div class="alignright"><?php previous_posts_link('Next Entries &#x21E5;') ?></div>
-</div>
-<!-- END: navigation -->
-
-<?php else : ?>
+<?php endwhile; else : ?>
 
 <div class="post">
 	<h2 class="center">Not Found</h2>
