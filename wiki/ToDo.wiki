@@ -1,0 +1,3 @@
+#labels Featured
+  * find a way to display article count in yearly archives
+  * what is wp_dropdown_category
