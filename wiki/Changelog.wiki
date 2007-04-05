@@ -1,0 +1,10 @@
+#labels Featured
+v1.2.0
+
+  * yearly archives commented so only user who want them can have it but it is not default
+  * ordered list style added to the sidebar
+  * added latest article to the sidebar
+
+v0.1.0
+
+  * first release, so no changelogs
