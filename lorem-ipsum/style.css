@@ -203,6 +203,11 @@ background: url(i/arrow-01.gif) 0 0.65em no-repeat;
 div#l_sidebar ul li a, div#r_sidebar ul li a { color: #333; text-decoration: none; }
 div#l_sidebar ul li a:hover, div#r_sidebar ul li a:hover { color: #000; text-decoration: underline; }
 
+div#l_sidebar ul li ol li, div#r_sidebar ul li ol li {
+list-style: decimal;
+margin: 0.2em 0;
+padding: 0.2em 0;
+}
 /* content */
 div#content {
 background: #fff url(i/grid.gif) left repeat-y;

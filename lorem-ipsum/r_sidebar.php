@@ -1,14 +1,14 @@
 <!-- START: r_sidebar -->
 <div id="r_sidebar">
-
 <ul id="r_sidebarwidgeted">
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(2) ) : else : ?>
 
 <li id="search">
 <h2>Search</h2>
 <?php include(TEMPLATEPATH."/searchform.php");?>
+</li>
 
-<?php /* This portion is only for  letsmint.com domain. You can remove this module if you wish. */ if ($_SERVER['HTTP_HOST']=="www.letsmint.com") { ?>
+<?php /* START: letsmint.com module */ /* This portion is only for  letsmint.com domain. You can remove this module if you wish. */ if ($_SERVER['HTTP_HOST']=="www.letsmint.com") { ?>
 <?php include $_SERVER['DOCUMENT_ROOT']."/themesdownloads.inc.php"; ?>
 
 <li id="donate-paypal">
@@ -21,9 +21,10 @@
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
 </form>
+</li>
+<?php } /* END: letsmint.com module */ ?>
 
-<?php } ?>
-
+<!-- uncomment this module to display a yearly archive list
 <li id="archives-yearly">
 <h2>Archives - Yearly</h2>
 <ul>
@@ -34,32 +35,43 @@ foreach($years as $year) :
 <li><a href="<?php echo get_year_link($year); ?> "><?php echo $year; ?></a></li>
 <?php endforeach; ?>
 </ul>
+</li>
+-->
 
 <li id="archives-monthly">
 <h2>Archives - Monthly</h2>
-<ul><?php wp_get_archives('type=monthly&show_post_count=1'); ?></ul>
-<!-- drop down alternative 
+
 <form id="archiveform" action="">
-<select name="archive_chrono" onchange="window.location =
-(document.forms.archiveform.archive_chrono[document.forms.archiveform.archive_chrono.selectedIndex].value);">
+<select name="archive_list" onchange="window.location = (document.forms.archiveform.archive_list[document.forms.archiveform.archive_list.selectedIndex].value);">
 <option value=''>Select a Month</option>
-<?php get_archives('monthly','','option'); //working with the old syntax but unable to make it working with the new WP 2.x template tag ?>
+<?php get_archives('monthly', '', 'option', '', '', show_post_count); ?>
 </select>
 </form>
--->
 
+<!-- // uncomment this section to get a monthly list archives instead of the drop down
+<ul><?php wp_get_archives('type=monthly&show_post_count=1'); ?></ul>
+-->
+</li>
+
+<li id="categories">
+<h2>Categories</h2>
+<ul><?php wp_list_categories('orderby=name&show_count=1&hide_empty=1&title_li'); ?></ul>
+<li>
+	
 <li id="subscribe">
 <h2>Subscribe</h2>
 	<ul>
 		<li><a href="<?php bloginfo_rss('rss2_url'); ?>" title="Articles (RSS)">Articles (RSS)</a></li>
 		<li><a href="<?php bloginfo_rss('comments_rss2_url'); ?>" title="Comments (RSS)">Comments (RSS)</a></li>
 	</ul>
+<li>
 	
 <li id="links">
 <h2>Links</h2>
 	<ul>
-	<?php get_links(-1, '<li>', '</li>', ' - '); ?>
+	<?php get_links(-1, '<li>', '</li>', '<br />', TRUE, 'name', FALSE); ?>
 	</ul>
+</li>
 
 <li id="meta">
 <h2>Meta</h2>
@@ -68,9 +80,9 @@ foreach($years as $year) :
 		<li><?php wp_loginout(); ?></li>
 		<?php wp_meta(); ?>
 	</ul>
-	
-	<?php endif; ?>
-	</ul>
+</li>	
+<?php endif; ?>
+</ul>
 
 <div id="sidebar-misc">
 	<h2>Etcetera</h2>
