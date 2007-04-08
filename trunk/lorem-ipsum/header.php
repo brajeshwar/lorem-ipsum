@@ -5,7 +5,7 @@
 <title><?php wp_title(' '); ?><?php if(wp_title(' ', false)) { echo ' - '; } ?><?php bloginfo('name'); ?></title>
 
 <!-- metas -->
-<meta name="keywords" content="brajeshwar, design, wordpress, theme, lorem ipsum" /><!-- feel free to change this to reflect your site -->
+<meta name="keywords" content="brajeshwar, design, wordpress, theme, lorem ipsum" />
 <meta name="Description" content="<?php bloginfo('description'); ?>" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
@@ -50,7 +50,7 @@
 <div id="nav">
 	<ul>
 		<li><a href="<?php echo get_settings('home'); ?>">Home</a></li>
-		<?php wp_list_pages('title_li=&depth=1'); ?>
+		<?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?>
 	</ul>
 </div>
 <!-- END: nav -->
