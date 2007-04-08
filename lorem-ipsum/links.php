@@ -6,7 +6,7 @@ Template Name: Links
 
 <?php get_header(); ?>
 
-<!-- START: content-articlecontent -->
+<!-- START: content -->
 <div id="content">
 
 <!-- START: content-article -->
@@ -38,8 +38,8 @@ Template Name: Links
 </div>
 <!-- END: content-article -->
 
-<?php include(TEMPLATEPATH."/l_sidebar.php");?>
-<?php include(TEMPLATEPATH."/r_sidebar.php");?>
+<?php include(TEMPLATEPATH."/sidebar-alt.php");?>
+<?php get_sidebar(); ?>
 	
 </div>
 <!-- END: content -->

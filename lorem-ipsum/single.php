@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!-- START: content-articlecontent -->
+<!-- START: content -->
 <div id="content">
 
 <!-- START: content-article -->
@@ -18,7 +18,7 @@
 
 			<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 			// Both Comments and Pings are open ?>
-			You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(true); ?>" rel="trackback">trackback</a> from your own site.
+			You can <a href="#respond">leave a comment</a> or <a href="<?php trackback_url(true); ?>" rel="trackback">trackback</a> from your own site.
 
 			<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 			// Only Pings are Open ?>
@@ -26,7 +26,7 @@
 
 			<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 			// Comments are open, Pings are not ?>
-			You can <a href="#respond">skip to the end</a> and leave a response. Pinging is currently not allowed.
+			You can <a href="#respond">skip to the end</a> and leave a comment. Pinging is currently not allowed.
 
 			<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 			// Neither Comments, nor Pings are open ?>
@@ -34,7 +34,27 @@
 
 			<?php } edit_post_link('Edit this entry.','',''); ?>
 			<script src="http://embed.technorati.com/linkcount" type="text/javascript"></script> <a class="tr-linkcount" href="http://technorati.com/search/<?php the_permalink(); ?>">View Technorati Linkbacks.</a>
-		</p>
+		</p>		
+	</div>
+	<div class="ads ads-article-adsense">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-4468481779445136"; // you should change this to your publication ID
+		google_ad_width = 468;
+		google_ad_height = 60;
+		google_ad_format = "468x60_as";
+		google_ad_type = "text";
+		//2007-04-08: wp-theme-lorem-ipsum
+		google_ad_channel = "2784874737"; // optional but you can add your desired adsense channel
+		google_color_border = "FFFFFF";
+		google_color_bg = "FFFFFF";
+		google_color_link = "333333";
+		google_color_text = "666666";
+		google_color_url = "333333";
+		//-->
+		</script>
+		<script type="text/javascript"
+		  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
 	</div>
 	
 	<?php comments_template(); ?>
@@ -58,8 +78,8 @@
 </div>
 <!-- END: content-article -->
 
-<?php include(TEMPLATEPATH."/l_sidebar.php");?>
-<?php include(TEMPLATEPATH."/r_sidebar.php");?>
+<?php include(TEMPLATEPATH."/sidebar-alt.php");?>
+<?php get_sidebar(); ?>
 	
 </div>
 <!-- END: content -->

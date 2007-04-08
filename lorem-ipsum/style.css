@@ -1,10 +1,10 @@
 /* 
 Theme Name: Lorem Ipsum
 Theme URL: http://www.letsmint.com/
-Description: No Image; a fast loading, Widget ready 3 column, clean, clear, white theme. Font style compatible with Microsoft Windows Vista. Compatible with older versions of Wordpress but best suited for Wordpress 2.1 and above.
+Description: <p>No Image; a fast loading, Widget ready 3 column, clean, clear, white theme. Font style compatible with Microsoft Windows Vista. Compatible with older versions of Wordpress but best suited for Wordpress 2.1 and above.</p><p>The theme is optimized for Human readibility and Search Engines; it is also ready for revenue earning through google adsense. You've to edit/change the Publication ID to your Google Adsense Publication ID to start earning right away as the color scheme of the adsense are already optimized for the theme design.</p><p>For more details visit the <a href="http://www.letsmint.com/" title="Lorem Ipsum">Lorem Ipsum</a> theme site.</p>
 Author: Brajeshwar
 Author URI: http://www.brajeshwar.com/
-Version: v1.0.0
+Version: v1.2.0
 
 The CSS, XHTML and design is released under GPL:
 http://www.opensource.org/licenses/gpl-license.php
@@ -163,11 +163,11 @@ text-transform: uppercase;
 div#nav ul li a:hover { color: #1e90ff; }
 
 /* sidebars */
-div#l_sidebar, div#r_sidebar { width: 200px; }
-div#l_sidebar { float: left; }
-div#r_sidebar { float: right; }
+div#sidebar, div#sidebar-alt { width: 200px; }
+div#sidebar-alt { float: left; }
+div#sidebar { float: right; }
 
-div#l_sidebar h2, div#r_sidebar h2 {
+div#sidebar h2, div#sidebar-alt h2 {
 font: normal normal bold 1em/normal Constantia, "Palatino Linotype", Palatino, Georgia, serif;
 text-transform: uppercase;
 border-bottom: 1px solid #999;
@@ -176,52 +176,52 @@ margin: 4px 0;
 padding: 4px 0;
 }
 
-div#l_sidebar p, div#r_sidebar p {}
+div#sidebar-alt p, div#sidebar p {}
 
-div#l_sidebar ul, div#r_sidebar ul  {
+div#sidebar-alt ul, div#sidebar ul  {
 list-style: none;
 margin: 0;
 padding: 0 0 20px 0;
 }
 
-div#l_sidebar li, div#r_sidebar li {
+div#sidebar-alt li, div#sidebar li {
 list-style: none;
 margin: 0;
 padding: 0;
 }
 
-div#l_sidebar ul li, div#r_sidebar ul li {
+div#sidebar-alt ul li, div#sidebar ul li {
 margin: 0.2em 0;
 padding: 0.2em 0;
 font: normal normal normal 0.96em/normal Candara, "Trebuchet MS", Trebuchet, sans-serif;
 }
-div#l_sidebar ul li ul li, div#r_sidebar ul li ul li {
+div#sidebar-alt ul li ul li, div#sidebar ul li ul li {
 margin: 0.2em 0;
 padding: 0.2em 1.5em;
 background: url(i/arrow-01.gif) 0 0.65em no-repeat;
 }
-div#l_sidebar ul li a, div#r_sidebar ul li a { color: #333; text-decoration: none; }
-div#l_sidebar ul li a:hover, div#r_sidebar ul li a:hover { color: #000; text-decoration: underline; }
+div#sidebar-alt ul li a, div#sidebar ul li a { color: #333; text-decoration: none; }
+div#sidebar-alt ul li a:hover, div#sidebar ul li a:hover { color: #000; text-decoration: underline; }
 
-div#l_sidebar ul li ol li, div#r_sidebar ul li ol li {
+div#sidebar-alt ul li ol li, div#sidebar ul li ol li {
 list-style: decimal;
 margin: 0.2em 0;
 padding: 0.2em 0;
 }
 /* content */
 div#content {
-background: #fff url(i/grid.gif) left repeat-y;
+background: #fff url(i/grid-cl-side-right.gif) left repeat-y;
 margin: 20px 0;
 }
 
 /* content-article */
 div#content-article {
 float: left;
-width: 460px;
-margin-right: 40px;
+width: 470px;
+margin-right: 30px;
 }
 
-.post { margin-bottom: 20px; }
+.post {}
 .post h2, .post h2 a {
 text-transform: uppercase;
 font: normal normal bold 1em/1.5em Constantia, "Palatino Linotype", Palatino, Georgia, serif;
@@ -258,7 +258,7 @@ padding: 0;
 .post p.postmetadata a:hover { text-decoration: underline; color: #666; }
 
 div#content-article img.wp-smiley, div#content-article img.wp-wink { float: none; border: 0 none; padding: 0; margin: 0; }
-#content-article img, #content-article img a {
+div#content-article img, div#content-article img a {
 float: left;
 border: 1px solid #e0e0e0;
 margin: 0 10px 5px 0;
@@ -304,6 +304,10 @@ color: #4876ff;
 div#content-article .navigation { margin: 20px 0; border-top: 1px solid #ebebeb;}
 div#content-article .navigation .alignleft { float: left; }
 div#content-article .navigation .alignright { float: right; }
+
+/* ads */
+div.ads { overflow: hidden; }
+div.ads-article-adsense { border: 0 none; }
 
 /* footer */
 div#footer {

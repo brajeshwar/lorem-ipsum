@@ -13,3 +13,8 @@ CHANGELOGS & TO-DO have been moved to the Wiki page on Google Code
 
 http://code.google.com/p/lorem-ipsum/w/list
 __________________________________________________________________________________
+
+TO-DO
+
+* include attachment.php like default theme
+* comments-popup.php too
