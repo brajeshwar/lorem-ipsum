@@ -2,3 +2,5 @@
   * find a way to display article count in yearly archives
   * what is wp_dropdown_category
   * people have asked to add at least some minimal color to the theme
+  * ability of the admin to set column layout through admin panel
+  * ability of the admin to change adsense Publication ID from admin panel
