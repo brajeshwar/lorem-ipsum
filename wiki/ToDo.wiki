@@ -9,3 +9,5 @@
 
   * horizontal text link underneath the nav bar. let's turn this option off by default so anybody modifying it should be able to uncomment and make it live.
   * validate the code and make it valid xhtml and css too.
+  * too much text, see if the two sidebars can be reduced a bit and give more room to the main content.
+  * too much text, try to do something on this
