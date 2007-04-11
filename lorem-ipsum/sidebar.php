@@ -1,8 +1,10 @@
 <!-- START: sidebar -->
 <div id="sidebar">
+
 <!-- START: sidebar-widget -->
 <ul id="sidebar-widget">
-<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(sidebar-primary) ) : else : ?>
+<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('sidebar-primary') ) : else : ?>
+
 <li id="search">
 <h2>Search</h2>
 <?php include(TEMPLATEPATH."/searchform.php");?>
@@ -81,16 +83,17 @@ foreach($years as $year) :
 		<?php wp_meta(); ?>
 	</ul>
 </li>	
-<?php endif; ?>
-</ul>
-<!-- START: sidebar-widget -->
 
-<div id="sidebar-misc">
+<li id="etcetera">
 	<h2>Etcetera</h2>
 	<p>
 	<script src="http://widgets.technorati.com/t.js" type="text/javascript"></script><a href="http://technorati.com/blogs/<?php bloginfo('url'); ?>?sub=tr_authority_t_ns" class="tr_authority_t_js" style="color:#4261DF">Technorati blog authority</a>
 	</p>
-</div>
+</li>
+
+<?php endif; ?>
+</ul>
+<!-- START: sidebar-widget -->
 
 </div>
 <!-- END: sidebar -->
