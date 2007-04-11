@@ -14,3 +14,7 @@ v1.2.1
 
   * very minor bug fixes and code cleansing
   * added all default wordpress files after comparing with the Wordpress Default Theme (still left to work on the attachment.php and the comments-popup.php - they are perhaps the least used and least important, so I will take my time)
+
+v1.2.2
+
+  * gave names to the two sidebar widgets to make it easy for admin to know which sidebar they are customizing.
