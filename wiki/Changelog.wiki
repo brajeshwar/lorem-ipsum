@@ -1,7 +1,7 @@
 #labels Featured
 v0.1.0
 
-  * first release, so no changelogs
+  * first release, so no changelog
 
 v1.2.0
 
@@ -13,8 +13,8 @@ v1.2.0
 v1.2.1
 
   * very minor bug fixes and code cleansing
-  * added all default wordpress files after comparing with the Wordpress Default Theme (still left to work on the attachment.php and the comments-popup.php - they are perhaps the least used and least important, so I will take my time)
+  * added all default Wordpress files after comparing with the Wordpress Default Theme (still left to work on the attachment.php and the comments-popup.php - they are perhaps the least used and least important, so I will take my time)
 
 v1.2.2
 
-  * gave names to the two sidebar widgets to make it easy for admin to know which sidebar they are customizing.
+  * gave names to the two sidebar widgets to make it easy for Admin to know which sidebar they are customizing.
