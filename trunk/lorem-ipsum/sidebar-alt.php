@@ -1,8 +1,9 @@
 <!-- START: sidebar-alt -->
 <div id="sidebar-alt">
+
 <!-- START: sidebar-widget -->
 <ul id="sidebar-alt-widget">
-<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(sidebar-alternate) ) : else : ?>
+<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('sidebar-alternate') ) : else : ?>
 
 <!-- why not try a calendar here, something like the k10k.net style -->
 
@@ -46,8 +47,10 @@ google_color_url = "000000";
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </li>
+
 <?php endif; ?>
 </ul>
 <!-- END: sidebar-widget -->
+
 </div>
 <!-- END: sidebar-alt -->
