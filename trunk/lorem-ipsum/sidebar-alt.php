@@ -1,8 +1,8 @@
 <!-- START: sidebar-alt -->
 <div id="sidebar-alt">
 <!-- START: sidebar-widget -->
-<ul id="sidebar-widget">
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+<ul id="sidebar-alt-widget">
+<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(sidebar-alternate) ) : else : ?>
 
 <!-- why not try a calendar here, something like the k10k.net style -->
 

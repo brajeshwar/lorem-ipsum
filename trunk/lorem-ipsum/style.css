@@ -1,10 +1,10 @@
 /* 
 Theme Name: Lorem Ipsum
 Theme URL: http://www.letsmint.com/
-Description: <p>No Image; a fast loading, Widget ready 3 column, clean, clear, white theme. Font style compatible with Microsoft Windows Vista. Compatible with older versions of Wordpress but best suited for Wordpress 2.1 and above.</p><p>The theme is optimized for Human readibility and Search Engines; it is also ready for revenue earning through google adsense. You've to edit/change the Publication ID to your Google Adsense Publication ID to start earning right away as the color scheme of the adsense are already optimized for the theme design.</p><p>For more details visit the <a href="http://www.letsmint.com/" title="Lorem Ipsum">Lorem Ipsum</a> theme site.</p>
+Description: <p>No Image; a fast loading, Widget ready 3 column, clean, clear, white theme. Font style compatible with Microsoft Windows Vista. Compatible with older versions of Wordpress but best suited for Wordpress 2.1 and above.</p><p>The theme is optimized for Human readability and Search Engines; it is also ready for revenue earning through Google Adsense. You've to edit/change the Publication ID to your Google Adsense Publication ID to start earning right away as the color scheme of the Adsense are already optimized for the theme design.</p><p>For more details visit the <a href="http://www.letsmint.com/" title="Lorem Ipsum">Lorem Ipsum</a> theme site.</p>
 Author: Brajeshwar
 Author URI: http://www.brajeshwar.com/
-Version: v1.2.1
+Version: v1.2.2
 
 The CSS, XHTML and design is released under GPL:
 http://www.opensource.org/licenses/gpl-license.php
@@ -84,6 +84,7 @@ border: 1px solid #999;
 .txtStrike { text-decoration: line-through; color: #ccc; }
 .disHide { display: none; }
 hr { display: none; }
+.codered, .clrred { color: #f00; }
 
 /* misc */
 abbr, acronym {
@@ -276,26 +277,27 @@ padding: 10px;
 margin: 20px 0;
 }
 
-div#content-article ul {
+div#content-article ul, div#content-article ol {
 list-style: none;
 margin: 0;
-padding: 0;
+padding: 0 10px;
 }
-
+div#content-article ul li, div#content-article ol li {
+margin: 0 10px;
+padding: 4px 15px;
+}
+div#content-article ol { margin: 0 20px; }
+div#content-article ol li { list-style: decimal; padding: 4px 5px;} 
 div#content-article ul li {
 list-style: none;
-margin: 0 20px;
-padding: 4px 15px;
 background: url(i/arrow-03.gif) 0 10px no-repeat;
 }
-
-div#content-article ul li a {
+div#content-article ul li a, div#content-article ol li a {
 color: #333;
 text-decoration: none;
 border-bottom: 1px solid #ccc;
 }
-
-div#content-article ul li a:hover {
+div#content-article ul li a:hover, div#content-article ol li a:hover {
 text-decoration: none;
 border-bottom: 1px solid #ccc;
 color: #4876ff;
@@ -332,6 +334,15 @@ padding: 4px;
 #searchsubmit {
 margin-bottom: 10px;
 }
+
+/* forms */
+.textfield-default {
+width: 95%;
+color: #333;
+margin: 8px 0;
+padding: 4px;
+}
+.submit-default {}
 
 /* comments */
 .alt {
