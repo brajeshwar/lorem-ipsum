@@ -1,4 +1,7 @@
 <?php
-if ( function_exists('register_sidebars') )
-    register_sidebars(2);
+if ( function_exists('register_sidebar') )
+{
+register_sidebar(array('name'=>'sidebar-alternate'));
+register_sidebar(array('name'=>'sidebar-primary'));
+}
 ?>

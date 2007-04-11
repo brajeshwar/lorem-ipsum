@@ -2,8 +2,7 @@
 <div id="sidebar">
 <!-- START: sidebar-widget -->
 <ul id="sidebar-widget">
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
-
+<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(sidebar-primary) ) : else : ?>
 <li id="search">
 <h2>Search</h2>
 <?php include(TEMPLATEPATH."/searchform.php");?>
