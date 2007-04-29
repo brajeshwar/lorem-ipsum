@@ -22,8 +22,8 @@ Template Name: Links
 
 <!-- START: navigation -->
 <div class="navigation">
-	<div class="alignleft"><?php next_posts_link('&#x21E4; Previous Entries') ?></div>
-	<div class="alignright"><?php previous_posts_link('Next Entries &#x21E5;') ?></div>
+	<div class="alignleft"><?php next_posts_link('&larr; Previous Entries') ?></div>
+	<div class="alignright"><?php previous_posts_link('Next Entries &rarr;') ?></div>
 </div>
 <!-- END: navigation -->
 

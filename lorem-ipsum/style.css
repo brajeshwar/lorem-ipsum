@@ -1,6 +1,6 @@
 /* 
 Theme Name: Lorem Ipsum
-Theme URL: http://www.letsmint.com/
+Theme URL: http://www.letsmint.com/2007/lorem-ipsum-wordpress-theme/
 Description: <p>No Image; a fast loading, Widget ready 3 column, clean, clear, white theme. Font style compatible with Microsoft Windows Vista. Compatible with older versions of Wordpress but best suited for Wordpress 2.1 and above.</p><p>The theme is optimized for Human readability and Search Engines; it is also ready for revenue earning through Google Adsense. You've to edit/change the Publication ID to your Google Adsense Publication ID to start earning right away as the color scheme of the Adsense are already optimized for the theme design.</p><p>For more details visit the <a href="http://www.letsmint.com/" title="Lorem Ipsum">Lorem Ipsum</a> theme site.</p>
 Author: Brajeshwar
 Author URI: http://www.brajeshwar.com/
@@ -121,7 +121,7 @@ text-align: left;
 /* header */
 div#header { text-align: center; }
 div#header h1, div#header h1 a, div#header h1 a:hover {
-font: normal normal bold 1.8em/normal Cambria, "Times New Roman", Times, serif;
+font: normal normal bold 1.6em/normal Cambria, "Times New Roman", Times, serif;
 color: #333;
 text-decoration: none;
 text-transform: uppercase;
@@ -132,7 +132,7 @@ div#header h5 {
 font: normal normal normal 1.0em/normal Helvetica, Calibri, Arial, sans-serif;
 color: #666;
 padding: 0;
-margin: 10px;
+margin: 5px;
 }
 
 /* nav */
@@ -203,12 +203,26 @@ background: url(i/arrow-01.gif) 0 0.65em no-repeat;
 }
 div#sidebar-alt ul li a, div#sidebar ul li a { color: #333; text-decoration: none; }
 div#sidebar-alt ul li a:hover, div#sidebar ul li a:hover { color: #000; text-decoration: underline; }
-
+div#sidebar-alt ul li ol, div#sidebar ul li ol { list-style: decimal; }
 div#sidebar-alt ul li ol li, div#sidebar ul li ol li {
 list-style: decimal;
 margin: 0.2em 0;
 padding: 0.2em 0;
 }
+#rss-random, p.rss-random { }
+p.rss-random span.icon-rss {
+display: block;
+float: left;
+width: 90px;
+}
+p.rss-random span.randompost { font: normal normal normal 0.96em/normal Candara, "Trebuchet MS", Trebuchet, sans-serif; }
+p.rss-random span.randompost img {
+float: left;
+margin: 0 3px 0 0;
+}
+p.rss-random span.randompost a { text-decoration: underline; }
+p.rss-random span.randompost a:hover { text-decoration: underline; color: #000; }
+
 /* content */
 div#content {
 background: #fff url(i/grid-cl-side-right.gif) left repeat-y;
@@ -257,17 +271,22 @@ margin: 0;
 padding: 0;
 }
 .post p.postmetadata a:hover { text-decoration: underline; color: #666; }
-
-div#content-article img.wp-smiley, div#content-article img.wp-wink { float: none; border: 0 none; padding: 0; margin: 0; }
 div#content-article img, div#content-article img a {
 float: left;
 border: 1px solid #e0e0e0;
-margin: 0 10px 5px 0;
+margin: 5px 10px 5px 0;
 padding: 4px;
 text-decoration: none;
 background: #fff;
 }
-
+div#content-article img.wp-smiley,
+div#content-article img.wp-wink,
+div#content-article img.wp-polls {
+float: none; 
+border: 0 none; 
+padding: 0; 
+margin: 0;
+} 
 .post p.single-postmeta {
 background: #f0f0f0;
 border-top: 1px solid #e0e0e0;
@@ -276,7 +295,6 @@ color: #999;
 padding: 10px;
 margin: 20px 0;
 }
-
 div#content-article ul, div#content-article ol {
 list-style: none;
 margin: 0;
@@ -302,7 +320,6 @@ text-decoration: none;
 border-bottom: 1px solid #ccc;
 color: #4876ff;
 }
-
 div#content-article .navigation { margin: 20px 0; border-top: 1px solid #ebebeb;}
 div#content-article .navigation .alignleft { float: left; }
 div#content-article .navigation .alignright { float: right; }
@@ -323,6 +340,14 @@ padding: 20px 0;
 color: #333;
 font: normal normal 0.90em/normal Constantia, "Palatino Linotype", Palatino, Georgia, serif;
 }
+
+/* arrows, icons, et al */
+.more-info,
+.more-info-alt1 {
+padding-left: 20px;
+}
+.more-info { background: #fff url(i/tag_blue.png) left center no-repeat; }
+.more-info-alt1 { background: #fff url(i/accept.png) left center no-repeat; }
 
 /* search */
 #s {
@@ -380,3 +405,50 @@ display: block;
 text-transform: lowercase;
 color: #999;
 }
+
+/*
+FEEDBURNER - FEEDFLARE
+
+*	FeedFlare is wrapped in a <p> tag, so it will inherit the default paragraph styles in use on your blog.
+	However, because it contains a class of feedburnerFlareBlock, you can style it however you want.
+* By default, FeedFlare uses bullets (•) as separators. But each one is wrapped in a <span> tag,
+	so you can hide them, restyle them, or make them dance at your leisure.
+* To aid your styling, we've applied a class of first to the first link.
+
+<p class="feedburnerFlareBlock"><a href="flare1url" class="first">Flare 1</a> <span>&#8226;</span> <a href="flare2url">Flare 2</a> <span>&#8226;</span> <a href="flare3url">Flare 3</a></p>
+___________________________________________________________________________________________________ */
+p.feedburnerFlareBlock {}
+p.feedburnerFlareBlock .first {}
+p.feedburnerFlareBlock .flare1url {}
+
+/*
+MYBLOGLOG STYLES
+
+Here is the XHTML
+<table cellspacing='0' cellpadding='0' id='MBL_COMM'>
+ <tr><td colspan='2' class='mbl_h'>Recent Readers</td></tr>
+ <tr id='tr1'>
+  <td id='tdd11' class='mbl_img'><img /></td>
+  <td id='tdd21' class='mbl_mem'><a href='#'></a></td>
+ </tr>
+ <tr id='tr2'>
+  <td id='tdd12' class='mbl_img'><img /></td>
+  <td id='tdd22' class='mbl_mem'><a href='#'></a></td>
+ </tr>
+ <tr id='tr3'>
+  <td id='tdd13' class='mbl_img'><img /></td>
+  <td id='tdd23' class='mbl_mem'><a href='#'></a></td>
+ </tr>
+ <tr id='tr4'>
+  <td id='tdd14' class='mbl_img'><img /></td>
+  <td id='tdd24' class='mbl_mem'><a href='#'></a></td>
+ <tr id='tr5'>
+  <td id='tdd15' class='mbl_img'><img /></td>
+  <td id='tdd25' class='mbl_mem'><a href='#'></a></td>
+ </tr>
+</table>
+
+body table#MBL_COMM {border:2px solid red;}
+body table#MBL_COMM td.mbl_img {background:green;}
+body table#MBL_COMM img {border-color:blue;}
+___________________________________________________________________________________________________ */

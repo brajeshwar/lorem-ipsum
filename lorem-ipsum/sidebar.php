@@ -6,15 +6,26 @@
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('sidebar-primary') ) : else : ?>
 
 <li id="search">
-<h2>Search</h2>
+<h2><?php _e('Your Opinion'); ?></h2>
 <?php include(TEMPLATEPATH."/searchform.php");?>
+</li>
+
+<li id="rss-random">
+<p class="rss-random">
+<span class="icon-rss"><a href="<?php bloginfo('rss2_url'); ?>" title="Subscribe to RSS Feed"><img src="<?php bloginfo('template_directory'); ?>/i/icon-rss.gif" width="72" height="72" alt="Subscribe to RSS Feed" /></a></span>
+<?php if (function_exists('matt_random_redirect')) { ?>
+<span class="randompost"><img src="<?php bloginfo('template_directory'); ?>/i/random.png" width="32" height="32" alt="Stumble on a Random Article" />
+Do you know that you can <a href="<?php bloginfo('url'); ?>/?random" title="Stumble on a Random Article">Stumble on a Random Article</a>!</span>
+<?php } ?>
+</p>
+<p class="clearall"></p>
 </li>
 
 <?php /* START: letsmint.com module */ /* This portion is only for  letsmint.com domain. You can remove this module if you wish. */ if ($_SERVER['HTTP_HOST']=="www.letsmint.com") { ?>
 <?php include $_SERVER['DOCUMENT_ROOT']."/themesdownloads.inc.php"; ?>
 
 <li id="donate-paypal">
-<h2>Help Let's Mint</h2>
+<h2><?php _e('Help Lets Mint'); ?></h2>
 <p>Donating generously will help our team create more graciously beautiful, sleek and stunning Open Source Wordpress Themes.</p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -28,7 +39,7 @@
 
 <!-- uncomment this module to display a yearly archive list
 <li id="archives-yearly">
-<h2>Archives - Yearly</h2>
+<h2><?php _e('Archives - Yearly'); ?></h2>
 <ul>
 <?php
 $years = $wpdb->get_col("SELECT DISTINCT YEAR(post_date) FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC");
@@ -41,7 +52,7 @@ foreach($years as $year) :
 -->
 
 <li id="archives-monthly">
-<h2>Archives - Monthly</h2>
+<h2><?php _e('Archives - Monthly'); ?></h2>
 
 <form id="archiveform" action="">
 <select name="archive_list" onchange="window.location = (document.forms.archiveform.archive_list[document.forms.archiveform.archive_list.selectedIndex].value);">
@@ -56,27 +67,16 @@ foreach($years as $year) :
 </li>
 
 <li id="categories">
-<h2>Categories</h2>
+<h2><?php _e('Categories'); ?></h2>
 <ul><?php wp_list_categories('orderby=name&show_count=1&hide_empty=1&title_li'); ?></ul>
 <li>
 	
-<li id="subscribe">
-<h2>Subscribe</h2>
-	<ul>
-		<li><a href="<?php bloginfo_rss('rss2_url'); ?>" title="Articles (RSS)">Articles (RSS)</a></li>
-		<li><a href="<?php bloginfo_rss('comments_rss2_url'); ?>" title="Comments (RSS)">Comments (RSS)</a></li>
-	</ul>
-<li>
-	
-<li id="links">
-<h2>Links</h2>
-	<ul>
-	<?php get_links(-1, '<li>', '</li>', '<br />', TRUE, 'name', FALSE); ?>
-	</ul>
-</li>
+<?php if ( is_home() ) { ?>
+<?php wp_list_bookmarks("categorize=1&orderby=name&show_images=0&show_description=0&title_li"); ?>
+<?php } ?>
 
 <li id="meta">
-<h2>Meta</h2>
+<h2><?php _e('Meta'); ?></h2>
 	<ul>
 		<?php wp_register(); ?>
 		<li><?php wp_loginout(); ?></li>
@@ -85,7 +85,7 @@ foreach($years as $year) :
 </li>	
 
 <li id="etcetera">
-	<h2>Etcetera</h2>
+	<h2><?php _e('Etcetera'); ?></h2>
 	<p>
 	<script src="http://widgets.technorati.com/t.js" type="text/javascript"></script><a href="http://technorati.com/blogs/<?php bloginfo('url'); ?>?sub=tr_authority_t_ns" class="tr_authority_t_js" style="color:#4261DF">Technorati blog authority</a>
 	</p>

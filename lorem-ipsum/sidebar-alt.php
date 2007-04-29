@@ -10,14 +10,14 @@
 <?php /* This portion is only for  letsmint.com domain. You can remove this module if you wish. */ if ($_SERVER['HTTP_HOST']=="www.letsmint.com") { ?>
 
 <li id="affiliate-tla">
-<h2>Earn Money</h2>
+<h2><?php _e('Earn Money'); ?></h2>
 <p>Sign up for a <a href="http://www.text-link-ads.com/?ref=23717" title="Text-Link-Ads account">Text-Link-Ads account</a> and start earning money from your blog. If you sign up through us, you'll be helping us earn too.</p>
 <p><a href="http://www.text-link-ads.com/?ref=23717"><img src="http://www.text-link-ads.com/images/text_link_ads_A_180x60.gif" border="0" alt="Text Link Ads"></a></p>
 </li>
 <?php } ?>
 
 <li id="articles-latest">
-<h2>Latest Articles</h2>
+<h2><?php _e('Latest Articles'); ?></h2>
 <ol>
 <?php /* If this is home or a page */ if ( is_single() || is_page() ) {
 	wp_get_archives('type=postbypost&limit=5&format=html');
@@ -27,7 +27,6 @@
 </ol></li>
 
 <li id="ads-adsense">
-<h2>Sponsors</h2>
 <script type="text/javascript"><!--
 google_ad_client = "pub-4468481779445136"; //change this to your Publisher ID
 google_ad_width = 160;
