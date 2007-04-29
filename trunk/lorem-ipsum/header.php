@@ -22,6 +22,9 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <!-- javascript -->
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/pngfix.js"></script>
+<![endif]-->
 
 <!-- favicon -->
 <link href="<?php bloginfo('template_directory'); ?>/i/favicon.ico"  type="image/x-icon" rel="icon" />

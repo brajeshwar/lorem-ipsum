@@ -34,7 +34,12 @@
 
 			<?php } edit_post_link('Edit this entry.','',''); ?>
 			<script src="http://embed.technorati.com/linkcount" type="text/javascript"></script> <a class="tr-linkcount" href="http://technorati.com/search/<?php the_permalink(); ?>">View Technorati Linkbacks.</a>
-		</p>		
+			
+			<?php if (function_exists('matt_random_redirect')) { ?>
+			<br /><br />
+			<strong>Would you like to read a <a href="<?php bloginfo('url'); ?>/?random" title="Random Article">Random Article</a>?</strong>
+			<?php } ?>
+		</p>
 	</div>
 	<div class="ads ads-article-adsense">
 		<script type="text/javascript"><!--
@@ -70,8 +75,8 @@
 
 <div class="navigation">
 	<p>
-		<?php previous_post_link('Prev Article &#x2192; %link') ?><br />
-		<?php next_post_link('Next Article &#x2192; %link') ?>
+		<?php previous_post_link('Prev Article &larr; %link') ?><br />
+		<?php next_post_link('Next Article &rarr; %link') ?>
 	</p>
 </div>
 
