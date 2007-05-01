@@ -10,6 +10,41 @@
 	<div class="post" id="post-<?php the_ID(); ?>">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php the_content('&rarr; continue reading'); ?>
+		
+		<p>
+			<script type="text/javascript"><!--
+			google_ad_client = "pub-4468481779445136";
+			google_ad_width = 336;
+			google_ad_height = 280;
+			google_ad_format = "336x280_as";
+			google_ad_type = "text_image";
+			//2007-04-08: wp-theme-lorem-ipsum
+			google_ad_channel = "2784874737"; // optional but you can add your desired adsense channel
+			google_color_border = "FFFFFF";
+			google_color_bg = "FFFFFF";
+			google_color_link = "333333";
+			google_color_text = "666666";
+			google_color_url = "000000";
+			//-->
+			</script>
+			<script type="text/javascript"
+			  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		</p>
+		
+		<div id="related-random">
+		<?php if (function_exists('matt_random_redirect')) { ?>
+		<p>You can <a href="<?php bloginfo('url'); ?>/?random" title="Stumble on a Random Article">Stumble on a Random Article</a> on this site for further reading.</p>
+		<?php } ?>
+		
+		<?php if (function_exists('related_posts')) { ?>
+		<p>
+		Or, You can read the following available related articles from this site
+		<ul><?php related_posts(); ?></ul>
+		</p>
+		<?php } ?>
+		</div>
+		
 		<p class="single-postmeta">
 			<strong><abbr title="<?php the_author_description(); ?>"><?php the_author(); ?></abbr></strong>
 			posted this article under <?php the_category(', ') ?>
@@ -35,31 +70,7 @@
 			<?php } edit_post_link('Edit this entry.','',''); ?>
 			<script src="http://embed.technorati.com/linkcount" type="text/javascript"></script> <a class="tr-linkcount" href="http://technorati.com/search/<?php the_permalink(); ?>">View Technorati Linkbacks.</a>
 			
-			<?php if (function_exists('matt_random_redirect')) { ?>
-			<br /><br />
-			<strong>Would you like to read a <a href="<?php bloginfo('url'); ?>/?random" title="Random Article">Random Article</a>?</strong>
-			<?php } ?>
 		</p>
-	</div>
-	<div class="ads ads-article-adsense">
-		<script type="text/javascript"><!--
-		google_ad_client = "pub-4468481779445136"; // you should change this to your publication ID
-		google_ad_width = 468;
-		google_ad_height = 60;
-		google_ad_format = "468x60_as";
-		google_ad_type = "text";
-		//2007-04-08: wp-theme-lorem-ipsum
-		google_ad_channel = "2784874737"; // optional but you can add your desired adsense channel
-		google_color_border = "FFFFFF";
-		google_color_bg = "FFFFFF";
-		google_color_link = "333333";
-		google_color_text = "666666";
-		google_color_url = "333333";
-		//-->
-		</script>
-		<script type="text/javascript"
-		  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-		</script>
 	</div>
 	
 	<?php comments_template(); ?>

@@ -86,9 +86,9 @@ foreach($years as $year) :
 
 <li id="etcetera">
 	<h2><?php _e('Etcetera'); ?></h2>
-	<p>
-	<script src="http://widgets.technorati.com/t.js" type="text/javascript"></script><a href="http://technorati.com/blogs/<?php bloginfo('url'); ?>?sub=tr_authority_t_ns" class="tr_authority_t_js" style="color:#4261DF">Technorati blog authority</a>
-	</p>
+	<p><script src="http://widgets.technorati.com/t.js" type="text/javascript"></script><a href="http://technorati.com/blogs/<?php bloginfo('url'); ?>?sub=tr_authority_t_ns" class="tr_authority_t_js" style="color:#4261DF">Technorati blog authority</a></p>
+	<!-- SPOTPLEX: remember to change the spotplex number to yours from http://www.spotplex.com/ -->
+	<p><img src="http://www.spotplex.com/send/249163/regular-image.gif"></p>
 </li>
 
 <?php endif; ?>
