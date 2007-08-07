@@ -1,6 +1,5 @@
 #labels Featured
-#Plugins to enhance Lorem Ipsum Wordpress Theme
+adsfadsf
 
-=Plugins=
 
-These plugins can enhance Lorem Ipsum Wordpress Themes. However, they are not requirements for Lorem Ipsum to work.
+  * [http://green-beast.com/blog/?page_id=136 Secure and Accessible PHP Contact Form] (for contact page)
