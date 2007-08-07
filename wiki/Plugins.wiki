@@ -1,7 +1,7 @@
 #labels Featured
 The following Wordpress plugins can enhance Brajeshwar Theme. However, they're *OPTIONAL* and *NOT REQUIRED* for the theme to work properly.
 
-  * [http://green-beast.com/blog/?page_id=136 Secure and Accessible PHP Contact Form] (for contact page)
+  * [http://green-beast.com/blog/?page_id=136 Secure and Accessible PHP Contact Form] (required if you're using the "contact" template)
   * [http://wordpress.org/extend/plugins/random-redirect/ Random Redirect]
   * [http://wasabi.pbwiki.com/Related%20Entries Related Posts]
   * [http://txfx.net/code/wordpress/subscribe-to-comments/ Subscribe to Comments]
