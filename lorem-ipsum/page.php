@@ -10,11 +10,9 @@
 	<div class="post">
 		<h2><?php the_title(); ?></h2>
 		<?php the_content(''); ?>
-		<?php edit_post_link('Edit this Page', ' &#x2318; ', ''); ?>
+		<p><?php edit_post_link('&uarr; edit this page'); ?></p>
 	</div>
 	
-	<?php comments_template(); ?>
-
 <?php endwhile; ?>
 
 <!-- START: navigation -->
