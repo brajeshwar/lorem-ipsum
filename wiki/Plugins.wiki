@@ -1,0 +1,6 @@
+#labels Featured
+#Plugins to enhance Lorem Ipsum Wordpress Theme
+
+=Plugins=
+
+These plugins can enhance Lorem Ipsum Wordpress Themes. However, they are not requirements for Lorem Ipsum to work.
