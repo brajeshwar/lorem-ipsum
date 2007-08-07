@@ -16,6 +16,7 @@ Template Name: Links
 	<div class="post">
 		<h2>Links</h2>
 		<ul><?php get_links_list(); ?></ul>
+		<p><?php edit_post_link('&uarr; edit this page'); ?></p>
 	</div>
 
 <?php endwhile; ?>

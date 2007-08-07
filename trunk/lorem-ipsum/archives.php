@@ -35,6 +35,8 @@ Template Name: Archives
 	<div class="post">
 		<h2>The Last 100 Article (if available)</h2>
 		<ol><?php wp_get_archives('type=postbypost&limit=100&format=html'); ?></ol>
+		
+		<p><?php edit_post_link('&uarr; edit this page'); ?></p>
 	</div>
 
 <?php endwhile; else : ?>

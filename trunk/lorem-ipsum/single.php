@@ -9,7 +9,7 @@
 
 	<div class="post" id="post-<?php the_ID(); ?>">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-		<?php the_content('&rarr; continue reading'); ?>
+		<p class="article-jump"><a href="#article">Skip to the Article</a> &#x2193;</p>
 		
 		<p>
 			<script type="text/javascript"><!--
@@ -32,14 +32,17 @@
 			</script>
 		</p>
 		
+		<a id="article"></a>
+		<?php the_content(); ?>
+		
 		<div id="related-random">
 		<?php if (function_exists('matt_random_redirect')) { ?>
-		<p>You can <a href="<?php bloginfo('url'); ?>/?random" title="Stumble on a Random Article">Stumble on a Random Article</a> on this site for further reading.</p>
+		<p>&#x2192; You can <a href="<?php bloginfo('url'); ?>/?random" title="Stumble on a Random Article">Stumble on a Random Article</a> on this site for further reading.</p>
 		<?php } ?>
 		
 		<?php if (function_exists('related_posts')) { ?>
 		<p>
-		Or, You can read the following available related articles from this site
+		&#x2192; Or, You can read the following available related articles from this site
 		<ul><?php related_posts(); ?></ul>
 		</p>
 		<?php } ?>

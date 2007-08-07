@@ -5,8 +5,6 @@
 <ul id="sidebar-alt-widget">
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('sidebar-alternate') ) : else : ?>
 
-<!-- why not try a calendar here, something like the k10k.net style -->
-
 <?php /* This portion is only for  letsmint.com domain. You can remove this module if you wish. */ if ($_SERVER['HTTP_HOST']=="www.letsmint.com") { ?>
 
 <li id="affiliate-tla">
