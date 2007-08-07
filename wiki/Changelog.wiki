@@ -21,5 +21,5 @@ v1.2.3
 
 v1.2.4
 
-  * added contact template powered by Secure Email Form
+  * added contact template powered by [http://green-beast.com/blog/?page_id=136 Secure and Accessible PHP Contact Form]
   * article or blog post template modified to enhance google adsense placement
