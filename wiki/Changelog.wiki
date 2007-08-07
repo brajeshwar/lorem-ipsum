@@ -18,3 +18,8 @@ v1.2.1
 v1.2.3
 
   * gave names to the two sidebar widgets to make it easy for Admin to know which sidebar they are customizing.
+
+v1.2.4
+
+  * added contact template powered by Secure Email Form
+  * article or blog post template modified to enhance google adsense placement
